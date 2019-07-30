@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "138502851087",
+    "firebase_url": "https://ab-driver-71047.firebaseio.com",
+    "project_id": "ab-driver-71047",
+    "storage_bucket": "ab-driver-71047.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138502851087:android:15168593092bfaa5",
+        "android_client_info": {
+          "package_name": "com.abcar.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138502851087-2aa62mvgo1qrh87vkla9denq2lgknq3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_GPVEPKk9OWXKO-Vb9WrL7_ZOqyZavew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138502851087-2aa62mvgo1qrh87vkla9denq2lgknq3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
