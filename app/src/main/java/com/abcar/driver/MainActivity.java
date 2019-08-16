@@ -39,29 +39,33 @@ public class MainActivity extends AppCompatActivity {
     private TextView warning, warning_detail;
     private Boolean is_from_notification;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+            = getOnNavigationItemSelectedListener();
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    Intent i = new Intent(getApplicationContext(), Tracking.class);
-                    startActivity(i);
-                    return true;
-                case R.id.navigation_reward:
-                    Intent k = new Intent(getApplicationContext(), BuktiActivity.class);
-                    startActivity(k);
-                    return true;
-                case R.id.navigation_dashboard:
-                    return true;
+    private BottomNavigationView.OnNavigationItemSelectedListener getOnNavigationItemSelectedListener() {
+        return new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.navigation_home:
+                Intent i = new Intent(getApplicationContext(), Tracking.class);
+                startActivity(i);
+                return true;
+            case R.id.navigation_reward:
+                Intent k = new Intent(getApplicationContext(), BuktiActivity.class);
+                startActivity(k);
+                return true;
+            case R.id.navigation_dashboard:
+                return true;
 //                case R.id.navigation_notifications:
 //                    Intent j = new Intent(getApplicationContext(), NotificationActivity.class);
 //                    startActivity(j);
 //                    return true;
-            }
-            return false;
         }
-    };
+        return false;
+    }
+};
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

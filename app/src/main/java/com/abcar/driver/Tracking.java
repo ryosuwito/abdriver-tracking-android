@@ -165,13 +165,9 @@ public class Tracking extends AppCompatActivity implements OnMapReadyCallback {
                 mMap.clear();
                 mMap.addMarker(new MarkerOptions().position(jak).title("Latest Location"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(jak));
-            }catch(Exception e)
-            {
-
+            }catch(Exception e) {
+                e.printStackTrace();
             }
-        }
-        else {
-
         }
     }
     @Override
